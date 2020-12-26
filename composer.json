@@ -1,0 +1,33 @@
+{
+    "name": "habib-eg/layout",
+    "type": "library",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Habib\\Layout\\": "src/",
+            "Habib\\Layout\\Tests\\": "./tests"
+
+        },
+        "files": [
+            "./helpers/helper.php"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Habib",
+            "email": "mohamedmosaadhabib@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habib\\Layout\\Providers\\LayoutServiceProvider"
+            ]
+        }
+    },
+    "description": "layout",
+    "minimum-stability": "dev-master",
+    "version": "1"
+}

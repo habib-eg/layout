@@ -1,0 +1,31 @@
+.page-item {
+  .page-link {
+    color: var(--primary);
+    border-radius: 3px;
+    margin: 0 3px;
+  }
+  &.active .page-link {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  &.disabled .page-link {
+    border-color: transparent;
+    background-color: color_lighten(var(--primary), 31.7%);
+    color: var(--primary);
+    opacity: .6;
+  }
+}
+
+.page-link {
+  border-color: transparent;
+  background-color: color_lighten(var(--primary), 31.7%);
+  font-weight: 600;
+  &:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: transparent;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
