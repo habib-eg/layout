@@ -3,12 +3,12 @@
   text-align: center;
   &.pricing-highlight {
     .pricing-title {
-      background-color: var(--primary);
+      background-color: color(primary);
       color: #fff;
     }
     .pricing-cta {
       a {
-        background-color: var(--primary);
+        background-color: color(primary);
         color: #fff;
         &:hover {
             background-color: color_darken(primary, 10%) !important;
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     letter-spacing: 2.5px;
     background-color: color_lighten(light, 5%);
-    color: var(--primary);
+    color: color(primary);
     border-radius: 0 0 3px 3px;
     display: inline-block;
     padding: 5px 15px;

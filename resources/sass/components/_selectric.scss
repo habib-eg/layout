@@ -24,7 +24,7 @@
 }
 
 .selectric-open .selectric {
-  border-color: var(--primary);
+  border-color: color(primary);
 }
 
 .selectric-above .selectric-items, .selectric-below .selectric-items {
@@ -43,7 +43,7 @@
       background-color: #f2f2f2;
     }
     &.selected, &.highlighted {
-      background-color: var(--primary);
+      background-color: color(primary);
       color: #fff;
     }
   }

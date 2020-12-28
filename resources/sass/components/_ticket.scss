@@ -45,13 +45,13 @@
       &:hover {
         background-color: rgba(63,82,227,.03);
         .ticket-title {
-          color: var(--primary);
+          color: color(primary);
         }
       }
       &.active {
-        @include button-shadow(var(--primary);
+        @include button-shadow(primary);
         border-radius: 3px;
-        background-color: var(--primary);
+        background-color: color(primary);
         border-bottom: none;
         .ticket-title, .ticket-desc {
           color: #fff !important;

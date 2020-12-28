@@ -4341,7 +4341,12 @@ module.exports = {
 /*!******************************!*\
   !*** ./resources/js/main.js ***!
   \******************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -4362,7 +4367,7 @@ __webpack_require__(/*! @fortawesome/fontawesome-free */ "./node_modules/@fortaw
 
 __webpack_require__(/*! jquery.nicescroll */ "./node_modules/jquery.nicescroll/jquery.nicescroll.js");
 
-__webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+window.moment = (moment__WEBPACK_IMPORTED_MODULE_0___default());
 
 /***/ }),
 
@@ -40596,9 +40601,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!****************************************!*\
   !*** ./resources/sass/components.scss ***!
   \****************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: argument `$color` of `lighten($color, $amount)` must be a color\n        on line 6 of resources/sass/_functions.scss, in function `lighten`\n        from line 6 of resources/sass/_functions.scss, in function `color_lighten`\n        from line 27 of resources/sass/components/_select2.scss\n        from line 89 of /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/resources/sass/components.scss\n>>     @return lighten(map-get($colors, $key), $amount);\n\n   ------------^\n\n    at processResult (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/lib/NormalModule.js:583:19)\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/lib/NormalModule.js:676:5\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:397:11\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.callback (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/sass-loader/dist/index.js:73:7)\n    at Object.done [as callback] (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/neo-async/async.js:8069:18)\n    at options.error (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/node-sass/lib/index.js:294:32)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -40619,9 +40627,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************!*\
   !*** ./resources/sass/style.scss ***!
   \***********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: argument `$color` of `lighten($color, $amount)` must be a color\n        on line 6 of resources/sass/_functions.scss, in function `lighten`\n        from line 6 of resources/sass/_functions.scss, in function `color_lighten`\n        from line 109 of resources/sass/override/_form.scss\n        from line 65 of /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/resources/sass/style.scss\n>>     @return lighten(map-get($colors, $key), $amount);\n\n   ------------^\n\n    at processResult (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/lib/NormalModule.js:583:19)\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/lib/NormalModule.js:676:5\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:397:11\n    at /mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/webpack/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.callback (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/sass-loader/dist/index.js:73:7)\n    at Object.done [as callback] (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/neo-async/async.js:8069:18)\n    at options.error (/mnt/1ECECAA3CECA7297/Work/laravel/stisla/layout/node_modules/node-sass/lib/index.js:294:32)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -64932,6 +64943,18 @@ process.umask = function() { return 0; };
 /******/ 	// It's empty as some runtime module handles the default behavior
 /******/ 	__webpack_require__.x = x => {}
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => module['default'] :
+/******/ 				() => module;
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports

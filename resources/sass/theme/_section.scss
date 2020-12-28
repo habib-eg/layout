@@ -22,7 +22,7 @@
       margin-right: 15px;
       .btn {
         &:hover {
-          background-color: var(--primary);
+          background-color: color(primary);
           color: #fff;
         }
       }

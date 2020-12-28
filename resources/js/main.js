@@ -1,3 +1,4 @@
+import moment from "moment";
 window._ = require('lodash');
 
 window.axios = require('axios');
@@ -19,4 +20,4 @@ $.ajaxSetup({
 require('bootstrap');
 require('@fortawesome/fontawesome-free');
 require('jquery.nicescroll')
-require('moment');
+window.moment =  moment;

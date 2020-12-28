@@ -91,7 +91,7 @@ body.sidebar-mini {
         &.active {
           > a {
             @include icon-shadow(primary);
-            background-color: var(--primary);
+            background-color: color(primary);
             color: #fff;
           }
         }
@@ -107,7 +107,7 @@ body.sidebar-mini {
           li.active > a,
           li.active > a:hover {
             color: #fff;
-            background-color: var(--primary) !important;
+            background-color: color(primary) !important;
           }
           li {
             a {
@@ -191,7 +191,7 @@ body.layout-2 {
             }
           }
           &:hover {
-            color: var(--primary);
+            color: color(primary);
             background-color: transparent;
           }
         }
@@ -245,7 +245,7 @@ body.layout-3 {
       > .nav-item {
         &.active {
           > .nav-link {
-            color: var(--primary);
+            color: color(primary);
             &:before {
               left: 35px;
               right: 0;
@@ -287,7 +287,7 @@ body.layout-3 {
             right: initial;
             bottom: 0;
             height: 2px;
-            background-color: var(--primary);
+            background-color: color(primary);
             transition: all .5s;
           }
           span {
@@ -332,7 +332,7 @@ body.layout-3 {
           }
           .nav-item.active > .nav-link,
           .nav-item .nav-link:focus {
-            background-color: var(--primary);
+            background-color: color(primary);
             color: #fff;
           }
         }
@@ -428,7 +428,7 @@ body.layout-3 {
       }
       &.active {
         a {
-          color: var(--primary);
+          color: color(primary);
           font-weight: 600;
           background-color: color_lighten(light, 6.5%);
           &.has-dropdown {
@@ -471,12 +471,12 @@ body.layout-3 {
             padding-left: 65px;
             font-weight: 400;
             &:hover {
-              color: var(--primary);
+              color: color(primary);
               background-color: inherit;
             }
           }
           &.active > a {
-            color: var(--primary);
+            color: color(primary);
             font-weight: 600;
           }
           a i {
@@ -527,16 +527,16 @@ body:not(.sidebar-mini) .sidebar-style-1 {
     li {
       &.active {
         a {
-          background-color: var(--primary);
+          background-color: color(primary);
           color: #fff;
         }
         ul {
           &.dropdown-menu {
             li {
               a {
-                color: color_lighten(var(--primary), 28%);
+                color: color_lighten(primary, 28%);
                 &:hover {
-                  background-color: var(--primary);
+                  background-color: color(primary);
                   color: #fff;
                 }
               }
@@ -569,7 +569,7 @@ body:not(.sidebar-mini) .sidebar-style-2 {
             transform: translateY(-50%);
             height: 25px;
             width: 4px;
-            background-color: var(--primary);
+            background-color: color(primary);
           }
         }
       }

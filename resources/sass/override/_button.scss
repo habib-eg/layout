@@ -242,9 +242,9 @@
 }
 
 .btn-primary, .btn-primary.disabled {
-  @include button-shadow(var(--primary);
-  background-color: var(--primary);
-  border-color: var(--primary);
+  @include button-shadow(primary);
+  background-color: color(primary);
+  border-color: color(primary);
   &:focus {
     background-color: color_darken(primary, 10%) !important;
     &:active {
@@ -257,10 +257,10 @@
 }
 
 .btn-outline-primary, .btn-outline-primary.disabled {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: color(primary);
+  color: color(primary);
   &:hover, &:focus, &:active {
-    background-color: var(--primary) !important;
+    background-color: color(primary) !important;
     color: #fff;
   }
 }
@@ -270,7 +270,7 @@
   color: #fff;
   &:hover, &:focus, &:active {
     background-color: #fff;
-    color: var(--primary);
+    color: color(primary);
   }
 }
 
@@ -312,7 +312,7 @@
 .btn-group {
   .btn {
     &.active {
-      background-color: var(--primary);
+      background-color: color(primary);
       color: #fff;
     }
   }

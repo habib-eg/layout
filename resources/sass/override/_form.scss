@@ -106,7 +106,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .input-group-append [class*="btn-outline-"] {
-  background-color: color_lighten(var(--primary), 32.4%);
+  background-color: color_lighten(primary, 32.4%);
 }
 
 .form-text {
@@ -116,7 +116,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before,
 .custom-control-input:checked~.custom-control-label::before {
-  background-color: var(--primary) !important;
+  background-color: color(primary) !important;
 }
 
 .custom-checkbox-table {
@@ -139,7 +139,7 @@ select.form-control:not([size]):not([multiple]) {
   &:focus {
     + .custom-file-label {
       box-shadow: none;
-      border-color: var(--primary);
+      border-color: color(primary);
       &:after {
         border-color: transparent;
       }
@@ -208,7 +208,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .selectgroup-input {
   &:checked + .selectgroup-button {
-    background-color: var(--primary);
+    background-color: color(primary);
     color: #fff;
     z-index: 1;
   }
@@ -284,13 +284,13 @@ select.form-control:not([size]):not([multiple]) {
 
 .custom-switch-input {
   &:checked ~ .custom-switch-indicator {
-    background: var(--primary);
+    background: color(primary);
     &:before {
       left: calc(1rem + 1px);
     }
   }
   &:focus ~ .custom-switch-indicator {
-    border-color: var(--primary);
+    border-color: color(primary);
   }
 }
 
@@ -327,7 +327,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .imagecheck-input {
   &:focus ~ .imagecheck-figure {
-    border-color: var(--primary);
+    border-color: color(primary);
   }
   &:checked ~ .imagecheck-figure {
     border-color: rgba(0, 40, 100, 0.24);
@@ -347,7 +347,7 @@ select.form-control:not([size]):not([multiple]) {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: var(--primary) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") no-repeat center (center / 50%) 50%;
+  background: color(primary) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E") no-repeat center (center / 50%) 50%;
   color: #fff;
   z-index: 1;
   border-radius: 3px;

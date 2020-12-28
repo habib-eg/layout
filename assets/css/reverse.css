@@ -1,11 +1,11 @@
 body.skin-reverse.sidebar-mini .main-sidebar:after {
-  background-color: var(--primary);
+  background-color: color(primary);
 }
 
 body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active > a {
   background-color: #fff;
   box-shadow: none;
-  color: var(--primary);
+  color: color(primary);
 }
 
 body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active ul.dropdown-menu li a,
@@ -23,11 +23,11 @@ body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li ul.dropdown-menu l
 body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active ul.dropdown-menu li.active a,
 body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li ul.dropdown-menu li.active a {
   background-color: transparent !important;
-  color: var(--primary);
+  color: color(primary);
 }
 
 body.skin-reverse .main-sidebar {
-  background-color: var(--primary);
+  background-color: color(primary);
 }
 
 body.skin-reverse .main-sidebar .sidebar-brand a {
@@ -35,7 +35,7 @@ body.skin-reverse .main-sidebar .sidebar-brand a {
 }
 
 body.skin-reverse .main-sidebar .sidebar-menu li a {
-  color: color_lighten(var(--primary), 25%);
+  color: color_lighten(primary, 25%);
 }
 
 body.skin-reverse .main-sidebar .sidebar-menu li a:hover {
@@ -54,11 +54,11 @@ body.skin-reverse .main-sidebar .sidebar-menu li.menu-header {
 }
 
 body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
-  color: color_lighten(var(--primary), 25%);
+  color: color_lighten(primary, 25%);
 }
 
 body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {
-  background-color: var(--primary);
+  background-color: color(primary);
   color: #fff;
 }
 
@@ -89,6 +89,6 @@ body.skin-reverse .navbar-bg .form-inline .btn,
 body.skin-reverse .navbar-bg .form-inline .form-control,
 body.skin-reverse .navbar .form-inline .btn,
 body.skin-reverse .navbar .form-inline .form-control {
-  background-color: color_lighten(var(--primary), 31.5%);
+  background-color: color_lighten(primary, 31.5%);
 }
 

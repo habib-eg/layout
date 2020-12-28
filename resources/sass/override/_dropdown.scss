@@ -40,7 +40,7 @@ a.dropdown-item {
   &:focus,
   &:active,
   &.active {
-    background-color: var(--primary);
+    background-color: color(primary);
     color: #fff!important;
   }
 }
@@ -97,7 +97,7 @@ a.dropdown-item {
       }
     }
     &:focus {
-      background-color: var(--primary);
+      background-color: color(primary);
       .dropdown-item-desc {
         color: #fff !important;
         b {
@@ -191,7 +191,7 @@ a.dropdown-item {
       margin-top: -6px;
     }
     &.active {
-      background-color: var(--primary);
+      background-color: color(primary);
       color: #fff;
     }
   }

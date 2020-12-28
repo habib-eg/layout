@@ -5,8 +5,8 @@
     box-shadow: none;
   }
   &.swal-button--confirm {
-    @include button-shadow(var(--primary);
-    background-color: var(--primary);
+    @include button-shadow(primary);
+    background-color: color(primary);
     &:focus {
       opacity: .8;
     }

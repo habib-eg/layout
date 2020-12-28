@@ -27,11 +27,11 @@
       background-color: color(light);
     }
     &.wizard-step-active {
-      @include shadow-lighten(var(--primary));
-      background-color: var(--primary);
+      @include shadow-lighten(primary);
+      background-color: color(primary);
       color: #fff;
       &:before {
-        background-color: var(--primary);
+        background-color: color(primary);
         color: #fff;
       }
     }

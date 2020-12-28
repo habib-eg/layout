@@ -7,7 +7,7 @@
     .owl-dot {
       &.active {
         span {
-          background-color: var(--primary);
+          background-color: color(primary);
         }
       }
     }

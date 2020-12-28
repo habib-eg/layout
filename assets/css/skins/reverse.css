@@ -2,7 +2,7 @@ body.skin-reverse.sidebar-mini .main-sidebar:after {
   background-color: #6777ef;
 }
 body.skin-reverse.sidebar-mini .main-sidebar .sidebar-menu li.active > a {
-  background-color: #fff;
+  background-color: var(--bg_white);
   box-shadow: none;
   color: #6777ef;
 }
@@ -25,7 +25,7 @@ body.skin-reverse .main-sidebar {
   background-color: #6777ef;
 }
 body.skin-reverse .main-sidebar .sidebar-brand a {
-  color: #fff;
+  color: var(--white);
 }
 body.skin-reverse .main-sidebar .sidebar-menu li a {
   color: #dadefb;
@@ -47,14 +47,14 @@ body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
 }
 body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {
   background-color: #6777ef;
-  color: #fff;
+  color: var(--white);
 }
 body.skin-reverse .main-sidebar .sidebar-menu li ul.dropdown-menu li.active a {
-  color: #fff;
+  color: var(--white);
 }
 body.skin-reverse .navbar-bg,
 body.skin-reverse .navbar {
-  background-color: #fff;
+  background-color: var(--bg_white);
 }
 body.skin-reverse .navbar-bg .nav-link.nav-link-user,
 body.skin-reverse .navbar-bg .nav-link,

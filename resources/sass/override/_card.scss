@@ -55,7 +55,7 @@
     h4 {
       font-size: 16px;
       line-height: 28px;
-      color: var(--primary);
+      color: color(primary);
       padding-right: 10px;
       margin-bottom: 0;
       + .card-header-action,
@@ -67,8 +67,8 @@
           padding-left: 13px !important;
           padding-right: 13px !important;
           &.active {
-            @include button-shadow(var(--primary);
-            background-color: var(--primary);
+            @include button-shadow(primary);
+            background-color: color(primary);
             color: #fff;
           }
         }
@@ -147,7 +147,7 @@
     }
   }
   &.card-primary {
-    border-top: 2px solid var(--primary);
+    border-top: 2px solid color(primary);
   }
   &.card-secondary {
     border-top: 2px solid color(secondary);
@@ -170,7 +170,7 @@
   &.card-hero {
     .card-header {
       padding: 40px;
-      background-image: linear-gradient(to bottom, var(--primary), color_lighten(var(--primary), 10%));
+      background-image: linear-gradient(to bottom, color(primary), color_lighten(primary, 10%));
       color: #fff;
       overflow: hidden;
       height: auto;
@@ -187,7 +187,7 @@
       }
       .card-icon {
         float: right;
-        color: color_lighten(var(--primary), 8%);
+        color: color_lighten(primary, 8%);
         margin: -60px;
         .ion, .fas, .far, .fab, .fal {
           font-size: 140px;

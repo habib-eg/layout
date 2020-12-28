@@ -5,7 +5,7 @@ body.skin-reverse {
   &.sidebar-mini {
     .main-sidebar {
       &:after {
-        background-color: var(--primary);
+        background-color: color(primary);
       }
       .sidebar-menu {
         li {
@@ -13,7 +13,7 @@ body.skin-reverse {
             > a {
               background-color: #fff;
               box-shadow: none;
-              color: var(--primary);
+              color: color(primary);
             }
           }
           &.active ul.dropdown-menu,
@@ -30,7 +30,7 @@ body.skin-reverse {
               &.active {
                 a {
                   background-color: transparent !important;
-                  color: var(--primary);
+                  color: color(primary);
                 }
               }
             }
@@ -40,7 +40,7 @@ body.skin-reverse {
     }
   }
   .main-sidebar {
-    background-color: var(--primary);
+    background-color: color(primary);
     .sidebar-brand {
       a {
         color: #fff;
@@ -49,7 +49,7 @@ body.skin-reverse {
     .sidebar-menu {
       li {
         a {
-          color: color_lighten(var(--primary), 25%);
+          color: color_lighten(primary, 25%);
           &:hover {
             background-color: #6070e5;
           }
@@ -68,9 +68,9 @@ body.skin-reverse {
         ul.dropdown-menu {
           li {
             a {
-              color: color_lighten(var(--primary), 25%);
+              color: color_lighten(primary, 25%);
               &:hover {
-                background-color: var(--primary);
+                background-color: color(primary);
                 color: #fff;
               }
             }
@@ -99,7 +99,7 @@ body.skin-reverse {
     .form-inline {
       .btn,
       .form-control {
-        background-color: color_lighten(var(--primary), 31.5%);
+        background-color: color_lighten(primary, 31.5%);
       }
     }
   }

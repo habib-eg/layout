@@ -24,7 +24,7 @@
 }
 
 .select2-dropdown {
-  border-color: color_lighten(var(--primary), 27%) !important;
+  border-color: color_lighten(primary, 27%) !important;
 }
 
 .select2-container {
@@ -84,7 +84,7 @@
 .select2-container--default .select2-selection--multiple .select2-selection__choice,
 .select2-container--default .select2-results__option[aria-selected=true],
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: var(--primary);
+  background-color: color(primary);
   color: #fff;
 }
 
