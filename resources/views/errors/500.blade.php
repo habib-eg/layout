@@ -1,4 +1,4 @@
 <x-error>
     <x-slot name="number"> 500 </x-slot>
-    Whoopps, something went wrong.
+    @lang('layout.whoopps_something_went_wrong')
 </x-error>

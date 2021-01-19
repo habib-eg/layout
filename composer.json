@@ -2,12 +2,25 @@
     "name": "habib-eg/layout",
     "type": "library",
     "require": {
+        "spatie/laravel-activitylog": "^3|*",
+        "laravel/socialite": "^5|*",
+        "spatie/laravel-medialibrary": "^9|*",
+        "spatie/laravel-permission": "^3|*",
+        "spatie/laravel-sluggable": "^2|*",
+        "spatie/laravel-query-builder": "^3|*",
+        "laravel/sanctum": "^2|*",
+        "qoraiche/laravel-mail-editor": "^2|*",
+        "consoletvs/invoices": "^1|*",
+        "ctf0/media-manager": "^3|*",
+        "ctf0/lingo": "^2|*",
+        "astrotomic/laravel-translatable": "^11|*",
+        "pavel-mironchik/laravel-backup-panel": "*",
+        "spatie/laravel-backup": "^7|*"
     },
     "autoload": {
         "psr-4": {
             "Habib\\Layout\\": "src/",
-            "Habib\\Layout\\Tests\\": "./tests"
-
+            "Habib\\Tests\\": "./tests"
         },
         "files": [
             "./helpers/helper.php"
@@ -29,5 +42,5 @@
     },
     "description": "layout",
     "minimum-stability": "dev-master",
-    "version": "1"
+    "version": "2"
 }

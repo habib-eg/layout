@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+  "socialite_model"=>\Habib\Layout\Models\Socialite::class,
+  "socialite_morph_name"=>'owner',
   'js'=>[
       "assets/js/bootstrap/dist/js/bootstrap.min.js",
       "assets/js/@fortawesome/fontawesome-free/js/all.min.js",

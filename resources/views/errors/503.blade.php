@@ -1,4 +1,4 @@
 <x-error>
     <x-slot name="number"> 503 </x-slot>
-    Be right back.
+    @lang('layout.be_right_back')
 </x-error>

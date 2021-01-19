@@ -1,6 +1,7 @@
 <?php
 
 namespace Habib\Layout\Providers;
+use Habib\Layout\Commands\AuthCommand;
 use Habib\Layout\Components\Activity;
 use Habib\Layout\Components\Alert;
 use Habib\Layout\Components\AppFooter;
@@ -26,6 +27,13 @@ use Illuminate\Support\ServiceProvider;
 class LayoutServiceProvider extends ServiceProvider
 {
     /**
+     * @var array
+     */
+    public $commands = [
+        AuthCommand::class
+    ];
+
+    /**
      * Register services.
      */
     public function register()
@@ -40,10 +48,9 @@ class LayoutServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         $path = dirname(dirname(__DIR__));
         if ($this->app->runningInConsole()){
-
+            $this->commands($this->commands);
             $this->publishes([
                 "$path/config/layout.php"=>config_path('layout.php'),
             ],'config');
@@ -57,6 +64,15 @@ class LayoutServiceProvider extends ServiceProvider
             $this->publishes([
                 "$path/resources/views"=>resource_path('views/vendor/layout'),
             ],'views');
+
+            $this->publishes([
+                "$path/migrations"=>database_path('migrations'),
+            ],'migrations');
+
+            $this->publishes([
+                "$path/stubs"=>base_path('stubs'),
+            ],'stubs');
+
             if (is_dir("$path/fonts")) {
                 $this->publishes([
                     "$path/fonts"=>public_path('fonts'),

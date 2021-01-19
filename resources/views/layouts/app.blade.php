@@ -1,4 +1,6 @@
 @php($sidebar=!isset($sidebar))
+@php($notificationsOptions=true)
+@php($messagesOptions=true)
 <x-layout-app-layout>
     <div class="main-wrapper">
         @if (isset($sidebar) && !$sidebar)
@@ -15,7 +17,7 @@
                 </style>
             @endpush
         @endif
-        <x-layout-app-navbar :sidebar="$sidebar"></x-layout-app-navbar>
+        <x-layout-app-navbar :sidebar="$sidebar" :search="true" :notifications="$notificationsOptions" :messages="$messagesOptions"></x-layout-app-navbar>
 
         <x-layout-app-sidebar :sidebar="$sidebar"></x-layout-app-sidebar>
 
